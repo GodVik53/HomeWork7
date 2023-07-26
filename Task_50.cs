@@ -10,26 +10,25 @@
 
 
 
-
 int[,] nums = new int[3, 4];
 
 for (int i = 0; i < nums.GetLength(0); i++)
 {
-    for (int j = 0; j < nums.GetLength(1); j++)
-    {
-        nums[i, j] = new Random().Next(0, 10);
-    }
+   for (int j = 0; j < nums.GetLength(1); j++)
+   {
+       nums[i, j] = new Random().Next(0, 10);
+   }
 }
 
 for (int i = 0; i < nums.GetLength(0); i++)
 {
-    for (int j = 0; j < nums.GetLength(1); j++)
-    {
-        Console.Write(nums[i, j] + " ");
-    }
+   for (int j = 0; j < nums.GetLength(1); j++)
+   {
+       Console.Write(nums[i, j] + " ");
+   }
     Console.WriteLine();
 }
-int her=0;
+int per=0;
 Console.Write("Введите число для поиска: ");
 int m = Convert.ToInt32(Console.ReadLine());
 
@@ -42,7 +41,7 @@ for (int i = 0; i < nums.GetLength(0); i++)
 
         Console.Write ($"Указанное число находится в ячейке с адресом:  {i}, {j}");
         Console.WriteLine();
-        her++;
+        per++;
 
     }
 
@@ -50,5 +49,6 @@ for (int i = 0; i < nums.GetLength(0); i++)
 }
 
 }
-if (her ==0)
+if (per ==0)
 Console.WriteLine("Указанного числа нет в массиве");
+
